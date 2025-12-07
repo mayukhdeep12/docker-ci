@@ -39,7 +39,7 @@ jobs:
 
       # Run tests in the Docker container
       - name: Run tests
-        run: docker run mayukhdeep/ci-pipeline-demo:latest npm test
+        run: docker run mayukhdeep/ci-pipeline-demo:latest npm test -- --detectOpenHandles
 
       # Tag and push the image to Docker Hub
       - name: Push Docker image to Docker Hub
