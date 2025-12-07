@@ -35,6 +35,7 @@ jobs:
           tags: ci-pipeline-demo:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
+          load: true
 
       # Run tests in the Docker container
       - name: Run tests
